@@ -37,9 +37,9 @@ function App() {
       newbalanceOrg: formValues.newbalanceOrg,
     });
     if (response.data.isFraud) {
-      setMessage('The transaction is predicted to be fraudulent');
+      setMessage('Fraud');
     } else {
-      setMessage('The transaction is predicted to be not fraudulent');
+      setMessage('Not Fraud');
     }
   };
 
