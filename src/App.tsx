@@ -24,6 +24,7 @@ function App() {
   ];
 
   const onInputChange = (event: any, key: string) => {
+    setMessage('');
     setFormValues({ ...formValues, [key]: event.target.value });
   };
 
