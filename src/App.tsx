@@ -104,7 +104,7 @@ function App() {
           </a>
         </span>
       </p>
-      <p>{garbage}</p>
+      <p className="hidden">{garbage}</p>
     </div>
   );
 }
