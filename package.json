@@ -9,13 +9,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.0.1",
     "@capacitor/android": "^4.6.2",
     "@capacitor/cli": "^4.6.2",
     "@capacitor/core": "^4.6.2",
     "@capacitor/ios": "^4.6.2",
+    "antd": "^5.1.6",
     "axios": "^1.2.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-drag-drop-files": "^2.3.8",
+    "react-dropzone": "^14.2.3",
+    "react-highlight-words": "^0.20.0",
+    "react-is": "^18.2.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
