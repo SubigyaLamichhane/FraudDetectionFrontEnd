@@ -29,7 +29,14 @@ function App() {
   };
 
   const predict = async () => {
-    console.log(formValues);
+    if (
+      !formValues.amount ||
+      !formValues.oldbalanceOrg ||
+      !formValues.newbalanceOrg
+    ) {
+      setMessage('Please fill all the fields');
+      return;
+    }
     const response = await axios.post(API_URL, {
       typeOfPayment: formValues.typeOfPayment,
       amount: formValues.amount,
