@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import reactLogo from './assets/react.svg';
 import './App.css';
 import axios from 'axios';
@@ -7,6 +7,7 @@ import Modal from './Modal';
 
 function App() {
   const [count, setCount] = useState(0);
+  const [garbage, setGarbage] = useState(0);
   const [formValues, setFormValues] = useState({
     typeOfPayment: 1,
     amount: '',
@@ -22,6 +23,10 @@ function App() {
     { name: 'TRANSFER', value: 4 },
     { name: 'DEBIT', value: 5 },
   ];
+
+  useEffect(() => {
+    const response = axios.get(API_URL).then((res) => setGarbage(1));
+  }, []);
 
   const onInputChange = (event: any, key: string) => {
     setMessage('');
@@ -99,6 +104,7 @@ function App() {
           </a>
         </span>
       </p>
+      <p>{garbage}</p>
     </div>
   );
 }

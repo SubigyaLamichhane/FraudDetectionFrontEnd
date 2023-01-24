@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Fraud Detection</string>
+    <string name="title_activity_main">Fraud Detection</string>
+    <string name="package_name">frauddetection.subigya.tech</string>
+    <string name="custom_url_scheme">frauddetection.subigya.tech</string>
+</resources>
